@@ -1,8 +1,12 @@
+//Reemplazar textos dentro de un tag
 $(document).ready(function(){
 	$("p").html(function(buscar,reemplaza) {
 		return reemplaza.replace('Hola', '<strong>Mi</strong>');
 	});
 });
+
+//Array
+var words = $('.location_28 div[itemprop="streetAddress"').text().split(" "); console.log(words);
 
 //Change background color
 function changeColor(){
