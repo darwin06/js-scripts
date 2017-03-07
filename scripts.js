@@ -22,3 +22,13 @@ function changeColor(){
 }
 //Function change background imgwrap
 setInterval(changeColor, 5000);
+
+
+// REMOVE CHILDREN ELEMENTS FROM PARENT ELEMENT
+var container= document.getElementsByClassName('slick-track')[2];
+console.log(container.childNodes.length);
+for(var i = 0; i < container.childNodes.length; i++) { 
+	console.log(i); 
+	container.removeChild(container.childNodes[i]);
+}
+
